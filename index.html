@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pythagoras</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head-div">
+            <h1 class="main-head">
+                Pythagoras theoram
+            </h1>
+    
+            <h1 class="description-head">
+                Find the hypotenuse of a right-angled triangle (Please refresh after each try)
+            </h1>
+
+            <img src="./right-triangle.jpg" alt="right-angled triangle picture">
+        </div>
+
+        <div class="calculation-div">
+            <input type="number" id="input1" placeholder="Enter value for b" id="input1">
+            <input type="number" id="input2" placeholder="Enter value for a" id="input2">
+            <input id="display" readonly placeholder="Hypotenuse = " id="display">
+        </div>
+
+        <div class="button-div">
+            <button class="btn" onclick="refresh()">
+                Refresh
+            </button>
+
+            <button class="btn" id="btn" onclick="check()">
+                Calculate
+            </button>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

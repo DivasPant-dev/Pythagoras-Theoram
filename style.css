@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    font-family: montserrat;
+}
+
+.head-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-head {
+    font-family: "Times New Roman";
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.description-head {
+    font-size: 1.5rem;
+}
+
+img {
+    height: 200px;
+}
+
+.calculation-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+input {
+    padding: 2px;
+    height: 30px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    color: whitesmoke;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: darkorange;
+}
+
+.btn:active {
+    background-color: orangered;
+}
+
+.button-div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#display::placeholder {
+    color: black;
+}
+
+@media screen and (max-width: 450px) {
+    .calculation-div {
+        flex-direction: column;
+    }
+}
