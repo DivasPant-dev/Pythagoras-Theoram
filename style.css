@@ -71,6 +71,14 @@ input {
     color: black;
 }
 
+footer {
+    background: linear-gradient(to right, red , pink, pink, pink, pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 600;
+    color: transparent;
+}
+
 @media screen and (max-width: 450px) {
     .calculation-div {
         flex-direction: column;
