@@ -1,51 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pythagoras</title>
+let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
+let display = document.getElementById("display");
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+function check() {
+    if (input1.value == "" || input2.value == "") {
+        display.value = "Error";
+    }
+    else {
+        input1 = input1.value;
+        input2 = input2.value;
 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="head-div">
-            <h1 class="main-head">
-                Pythagoras theoram
-            </h1>
-    
-            <h1 class="description-head">
-                Find the hypotenuse of a right-angled triangle (Please refresh after each try)
-            </h1>
+        const result = Math.sqrt(Math.pow(input1, 2) + Math.pow(input2, 2));
 
-            <img src="./right-triangle.jpg" alt="right-angled triangle picture">
-        </div>
+        let displayAccess = document.getElementById("display");
 
-        <div class="calculation-div">
-            <input type="number" id="input1" placeholder="Enter value for b" id="input1">
-            <input type="number" id="input2" placeholder="Enter value for a" id="input2">
-            <input id="display" readonly placeholder="Hypotenuse = " id="display">
-        </div>
+        displayAccess.value += "Hypotenuse = " + result;
+    }
+}
 
-        <div class="button-div">
-            <button class="btn" onclick="refresh()">
-                Refresh
-            </button>
-
-            <button class="btn" id="btn" onclick="check()">
-                Calculate
-            </button>
-        </div>
-    </div>
-
-    <footer>
-        This website is the creation of 'Divas Pant'
-    </footer>
-
-    <script src="./index.js"></script>
-</body>
-</html>
+function refresh() {
+    window.location.reload();
+}
