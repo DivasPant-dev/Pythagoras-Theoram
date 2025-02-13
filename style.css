@@ -20,6 +20,10 @@
     font-family: "Times New Roman";
     font-size: 3rem;
     margin-top: 0;
+    background: linear-gradient(to right, red, orangered, orange, pink);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .description-head {
